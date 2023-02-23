@@ -1,7 +1,7 @@
 let count = 0;
 document.getElementById("triangleCal").addEventListener("click", function () {
     const [base, height] = getInput("triangleBaseInput", "triangleHeightInput");
-    if (base < 0 || height < 0|| isNaN(base) || isNaN(height)) {
+    if (base < 0 || height < 0 || isNaN(base) || isNaN(height)) {
         window.alert("Please enter valid input");
     } else {
         count++;
@@ -11,7 +11,7 @@ document.getElementById("triangleCal").addEventListener("click", function () {
 });
 document.getElementById("rectangleCal").addEventListener("click", function () {
     const [base, height] = getInput("rectangleBaseInput", "rectangleHeightInput");
-    if (base < 0 || height < 0|| isNaN(base) || isNaN(height)) {
+    if (base < 0 || height < 0 || isNaN(base) || isNaN(height)) {
         window.alert("Please enter valid input");
     } else {
         count++;
@@ -22,7 +22,7 @@ document.getElementById("rectangleCal").addEventListener("click", function () {
 });
 document.getElementById("parallelogramCal").addEventListener("click", function () {
     const [base, height] = getInput("parallelogramBaseInput", "parallelogramHeightInput");
-    if (base < 0 || height < 0|| isNaN(base) || isNaN(height)) {
+    if (base < 0 || height < 0 || isNaN(base) || isNaN(height)) {
         window.alert("Please enter valid input");
     } else {
         count++;
@@ -33,7 +33,7 @@ document.getElementById("parallelogramCal").addEventListener("click", function (
 });
 document.getElementById("rhombusCal").addEventListener("click", function () {
     const [base, height] = getInput("rhombusBaseInput", "rhombusHeightInput");
-    if (base < 0 || height < 0|| isNaN(base) || isNaN(height)) {
+    if (base < 0 || height < 0 || isNaN(base) || isNaN(height)) {
         window.alert("Please enter valid input");
     } else {
         count++;
@@ -42,15 +42,6 @@ document.getElementById("rhombusCal").addEventListener("click", function () {
     }
 
 });
-
-
-
-
-
-
-
-
-
 
 
 function getInput(baseId, heightId) {
