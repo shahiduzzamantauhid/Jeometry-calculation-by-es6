@@ -43,14 +43,6 @@ document.getElementById("rhombusCal").addEventListener("click", function () {
 
 });
 
-echo "# Jeometry-calculation-by-es6" >> README.md
-git init
-git add .
-git commit -m "jeometry area calculation by es6"
-git branch -M main
-git remote add origin https://github.com/shahiduzzamantauhid/Jeometry-calculation-by-es6.git
-git push -u origin main
-
 
 
 
