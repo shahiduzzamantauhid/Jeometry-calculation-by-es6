@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="fantasy">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeo calculation by daisy ui</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <!-- this is header section     -->
+    <header>
+        <div class="navbar bg-base-200 py-4 my-6">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Item 1</a></li>
+                        <li tabindex="0">
+                            <a class="justify-between">
+                                Parent
+                                <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24">
+                                    <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+                                </svg>
+                            </a>
+                            <ul class="p-2">
+                                <li><a>Submenu 1</a></li>
+                                <li><a>Submenu 2</a></li>
+                            </ul>
+                        </li>
+                        <li><a>Item 3</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost normal-case text-xl">Jeometry solution </a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Item 1</a></li>
+                    <li tabindex="0">
+                        <a>
+                            Parent
+                            <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                viewBox="0 0 24 24">
+                                <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+                            </svg>
+                        </a>
+                        <ul class="p-2">
+                            <li><a>Submenu 1</a></li>
+                            <li><a>Submenu 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a>Item 3</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a href="/blog.html" class="btn">Blog -></a>
+            </div>
+        </div>
+    </header>
+    <!-- starts the main or body part -->
+    <main class="w-11/12 mx-auto">
+        <div class="grid grid-cols-9 gap-4">
+            <div class="col-span-7">
+                <div class="flex justify-between flex-wrap">    
+                    <div class="card w-80 bg-base-100 shadow-xl my-20">
+                        <figure><img src="/images/triangle.png" alt="Shoes" /></figure>
+                        <div class="card-body text-center">
+                          <h2 class="card-title-">Triangle</h2>
+                          <p>Area = 0.5 x b x h</p>
+                          <p class="py-2">b = <input id="triangleBaseInput" class="w-12 bg-base-200 px-2" type="text" placeholder="10"> | h = <input id="triangleHeightInput" class="w-12 bg-base-200 px-2" type="text" placeholder="10"></p>
+                          <div class="card-actions justify-center">
+                            <button id="triangleCal" class="btn btn-primary w-5/6">Calculate</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card w-80 bg-base-100 shadow-xl my-20">
+                        <figure><img src="/images/rectangle.png" alt="Shoes" /></figure>
+                        <div class="card-body text-center">
+                          <h2 class="card-title-">Rectangle</h2>
+                          <p>Area = 0.5 x b x h</p>
+                          <p class="py-2">b = <input id="rectangleBaseInput" class="w-12 bg-base-200 px-2" type="text" placeholder="10"> | h = <input id="rectangleHeightInput" class="w-12 bg-base-200 px-2" type="text" placeholder="10"></p>
+                          <div class="card-actions justify-center">
+                            <button id="rectangleCal" class="btn btn-primary w-5/6">Calculate</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card w-80 bg-base-100 shadow-xl my-20">
+                        <figure><img src="/images/parallelogram.png" alt="Shoes" /></figure>
+                        <div class="card-body text-center">
+                          <h2 class="card-title-">Parallelogram</h2>
+                          <p>Area = 0.5 x b x h</p>
+                          <p class="py-2">b = <input id="parallelogramBaseInput" class="w-12 bg-base-200 px-2" type="text" placeholder="10"> | h = <input id="parallelogramHeightInput" class="w-12 bg-base-200 px-2" type="text" placeholder="10"></p>
+                          <div class="card-actions justify-center">
+                            <button id="parallelogramCal" class="btn btn-primary w-5/6">Calculate</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card w-80 bg-base-100 shadow-xl my-20">
+                        <figure><img src="/images/rhombus.png" alt="Shoes" /></figure>
+                        <div class="card-body text-center">
+                          <h2 class="card-title-">Rhombus</h2>
+                          <p>Area = 0.5 x b x h</p>
+                          <p class="py-2">b = <input id="rhombusBaseInput" class="w-12 bg-base-200 px-2" type="text" placeholder="10"> | h = <input id="rhombusHeightInput" class="w-12 bg-base-200 px-2" type="text" placeholder="10"></p>
+                          <div class="card-actions justify-center">
+                            <button id="rhombusCal" class="btn btn-primary w-5/6">Calculate</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card w-80 bg-base-100 shadow-xl my-20">
+                        <figure><img src="/images/triangle.png" alt="Shoes" /></figure>
+                        <div class="card-body text-center">
+                          <h2 class="card-title-">Triangle</h2>
+                          <p>Area = 0.5 x b x h</p>
+                          <p class="py-2">b = <input id="triangleBaseInput" class="w-12 bg-base-200 px-2" type="text" placeholder="10"> | h = <input id="triangleHeightInput" class="w-12 bg-base-200 px-2" type="text" placeholder="10"></p>
+                          <div class="card-actions justify-center">
+                            <button class="btn btn-primary w-5/6">Calculate</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card w-80 bg-base-100 shadow-xl my-20">
+                        <figure><img src="/images/triangle.png" alt="Shoes" /></figure>
+                        <div class="card-body text-center">
+                          <h2 class="card-title-">Triangle</h2>
+                          <p>Area = 0.5 x b x h</p>
+                          <p class="py-2">b = <input id="triangleBaseInput" class="w-12 bg-base-200 px-2" type="text" placeholder="10"> | h = <input id="triangleHeightInput" class="w-12 bg-base-200 px-2" type="text" placeholder="10"></p>
+                          <div class="card-actions justify-center">
+                            <button class="btn btn-primary w-5/6">Calculate</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card w-80 bg-base-100 shadow-xl my-20">
+                        <figure><img src="/images/triangle.png" alt="Shoes" /></figure>
+                        <div class="card-body text-center">
+                          <h2 class="card-title-">Triangle</h2>
+                          <p>Area = 0.5 x b x h</p>
+                          <p class="py-2">b = <input id="triangleBaseInput" class="w-12 bg-base-200 px-2" type="text" placeholder="10"> | h = <input id="triangleHeightInput" class="w-12 bg-base-200 px-2" type="text" placeholder="10"></p>
+                          <div class="card-actions justify-center">
+                            <button class="btn btn-primary w-5/6">Calculate</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+            </div>
+            <div class=" col-span-2 border">
+                <div class="title">
+                    <h1 class="text-2xl text-center font-semibold underline py-2">Area Calculation</h1>
+                    <table id="result" class="mx-auto"></table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- this is footere section  -->
+    <footer class="footer footer-center p-4 bg-base-300 text-base-content">
+        <div>
+          <p>Copyright © 2023 - All right reserved by Shahiduzzaman Tauhid</p>
+        </div>
+      </footer>
+      <script src="functions.js"></script>
+</body>
+
+</html>
